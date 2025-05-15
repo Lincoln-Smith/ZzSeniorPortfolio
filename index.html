@@ -3,26 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Lincoln's Senior Site</title>
+  <title>Lincoln's Portfolio</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  
 </head>
 <body>
 
 <header>
   <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
     <div class="container-fluid flex-column text-center">
-      <a class="navbar-brand mb-2 limelight-regular" id="jerseyShoreCandleNav" href="#">
-        Lincoln's Senior Site
+      <a class="navbar-brand mb-2 limelight-regular fs-1" href="#">
+        Lincoln's Portfolio
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
       <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
           <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
           <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
@@ -31,51 +27,61 @@
     </div>
   </nav>
 </header>
-      
-<main class="container my-5">
-  <section id="about" class="row mb-5 align-items-center">
-    <div class="col-md-6">
-      <img src="img/placeholder.webp" alt="Photo of Lincoln" class="img-fluid rounded">
-    </div>
-    <div class="col-md-6">
-      <h2>About Me</h2>
-      <p>Description about yourself goes here. You can talk about your background, interests, and what you're passionate about.</p>
+
+<main>
+  <!-- Hero Section -->
+  <section class="hero-section d-flex align-items-center text-white">
+    <div class="container text-center py-5 hero-content">
+      <h1 class="display-4 fw-bold mb-4">My Creative Journey</h1>
+      <p class="lead mb-5">Explore my evolution through web design and development projects</p>
+      <a href="gallery.html" class="btn cta-button btn-lg">View My Gallery</a>
     </div>
   </section>
 
-  <section id="web-design" class="row mb-5 align-items-center">
-    <div class="col-md-6 order-md-2">
-      <img src="img/placeholder.webp" alt="Web Design Class" class="img-fluid rounded">
-    </div>
-    <div class="col-md-6 order-md-1">
-      <h2>Web Design Career</h2>
-      <p>Description about your web design career aspirations and what you've learned in your classes. You can mention specific skills, projects, or what you enjoy about web design.</p>
+  <!-- Preview Section -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5">Project Highlights</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="gallery-preview rounded overflow-hidden">
+            <img src="img/placeholder.webp" alt="Project 1" class="img-fluid w-100">
+            <div class="p-3 bg-white card-text-content">
+              <h5>Early Work</h5>
+              <p>My first steps into web design</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="gallery-preview rounded overflow-hidden">
+            <img src="img/placeholder.webp" alt="Project 2" class="img-fluid w-100">
+            <div class="p-3 bg-white card-text-content">
+              <h5>Junior Year</h5>
+              <p>Developing more advanced techniques</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="gallery-preview rounded overflow-hidden">
+            <img src="img/placeholder.webp" alt="Project 3" class="img-fluid w-100">
+            <div class="p-3 bg-white card-text-content">
+              <h5>Current Projects</h5>
+              <p>Where my skills are today</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-5">
+        <a href="gallery.html" class="btn cta-button btn-lg">See Full Collection</a>
+      </div>
     </div>
   </section>
 </main>
-      
-<footer>
-  <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
-    <div class="container-fluid flex-column text-center">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <div class="text-center py-3">
-    <p class="mb-0">© 2025 Lincoln's Senior Site</p>
-  </div>
+
+<footer class="py-4 text-white text-center">
+  <p class="mb-0">© 2025 Lincoln's Portfolio. All rights reserved.</p>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<script src="script.js"></script>
 </body>
 </html>

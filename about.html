@@ -3,26 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Lincoln's Senior Site</title>
+  <title>Lincoln's Portfolio</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
 </head>
 <body>
 
 <header>
   <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
     <div class="container-fluid flex-column text-center">
-      <a class="navbar-brand mb-2 limelight-regular" id="jerseyShoreCandleNav" href="#">
-        Lincoln's Senior Site
+      <a class="navbar-brand mb-2 limelight-regular fs-1" href="#">
+        Lincoln's Portfolio
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
       <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
           <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
           <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
@@ -32,7 +28,34 @@
   </nav>
 </header>
       
-<main>
+<main class="container my-5">
+  <section id="about" class="row mb-5 justify-content-center">
+    <div class="col-md-8 text-center">
+      <img src="img/meJR.jpg" alt="Photo of Lincoln" class="img-fluid rounded mb-4">
+      <div class="content-section">
+        <h2>About Me</h2>
+        <p>Hello! I'm Lincoln, a high school senior passionate about web design, technology and just generally creative fields! 
+          I love exploring new technologies and creative outlets that challenge me to think 
+          differently. <br>
+          As I prepare for the next chapter of my life, I'm excited to pursue high education at American University where I 
+          can further develop my skills.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="web-design" class="row mb-5 align-items-center">
+    <div class="col-md-6 order-md-2">
+      <img src="img/class.jpg" alt="Web Design Class" class="img-fluid rounded">
+    </div>
+    <div class="col-md-6 order-md-1">
+      <h2>Web Design Career</h2>
+      <p>My journey in web design began with the web design pathway program during Freshman year. 
+        Since then, I've developed skills in HTML, CSS, JavaScript, Vue and jQuery.<br>
+        Through my coursework and personal projects, I've learned the importance of clean code, user-centered design and
+        collaboration. In the future, I hope to continue 
+        growing as a designer and problem-solver.</p>
+    </div>
+  </section>
 </main>
       
 <footer>

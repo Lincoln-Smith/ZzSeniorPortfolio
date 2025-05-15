@@ -3,28 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Lincoln's Senior Site</title>
+  <title>Lincoln's Portfolio Gallery</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
 
 <header>
   <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
     <div class="container-fluid flex-column text-center">
-      <a class="navbar-brand mb-2 limelight-regular" id="jerseyShoreCandleNav" href="#">
-        Lincoln's Senior Site
+      <a class="navbar-brand mb-2 limelight-regular fs-1" href="#">
+        Lincoln's Portfolio
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
       <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link active" href="gallery.html">Gallery</a></li>
           <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
         </ul>
       </div>
@@ -32,7 +27,78 @@
   </nav>
 </header>
       
-<main>
+<main class="container my-5">
+  <section class="text-center mb-5">
+    <h1 class="display-4 mb-3">My Project Evolution</h1>
+    <p class="lead">See how my skills have progressed through the years</p>
+  </section>
+
+<!-- Sophomore Year -->
+<div class="row justify-content-center mb-4">
+  <div class="col-lg-8">
+    <div class="year-card rounded">
+      <div class="year-header">
+        <h2>Sophomore Year</h2>
+        <p class="mb-0">The Beginning of My Journey</p>
+      </div>
+      <div class="year-content text-center">
+        <div class="d-flex justify-content-center">
+          <img src="img/placeholder.webp" alt="Sophomore Project" class="img-fluid rounded mb-3" style="max-height: 300px; width: auto;">
+        </div>
+        <p>My first major web projects where I learned HTML/CSS fundamentals and basic design principles.</p>
+        <div class="text-center">
+          <a href="sophomore.html" class="btn project-btn">View Sophomore Projects</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="timeline-connector"></div>
+
+<!-- Junior Year -->
+<div class="row justify-content-center mb-4">
+  <div class="col-lg-8">
+    <div class="year-card rounded">
+      <div class="year-header">
+        <h2>Junior Year</h2>
+        <p class="mb-0">Developing Advanced Skills</p>
+      </div>
+      <div class="year-content text-center">
+        <div class="d-flex justify-content-center">
+          <img src="img/placeholder.webp" alt="Junior Project" class="img-fluid rounded mb-3" style="max-height: 300px; width: auto;">
+        </div>
+        <p>Where I began incorporating JavaScript, responsive design, and more complex layouts.</p>
+        <div class="text-center">
+          <a href="junior.html" class="btn project-btn">View Junior Projects</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="timeline-connector"></div>
+
+<!-- Senior Year -->
+<div class="row justify-content-center">
+  <div class="col-lg-8">
+    <div class="year-card rounded">
+      <div class="year-header">
+        <h2>Senior Year</h2>
+        <p class="mb-0">Polished Portfolio Work</p>
+      </div>
+      <div class="year-content text-center">
+        <div class="d-flex justify-content-center">
+          <img src="img/placeholder.webp" alt="Senior Project" class="img-fluid rounded mb-3" style="max-height: 300px; width: auto;">
+        </div>
+        <p>My current work showcasing full-stack capabilities, advanced interactivity, and professional design.</p>
+        <div class="text-center">
+          <a href="senior.html" class="btn project-btn">View Senior Projects</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 </main>
       
 <footer>
@@ -45,18 +111,17 @@
         <ul class="navbar-nav">
           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link active" href="gallery.html">Gallery</a></li>
           <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
         </ul>
       </div>
     </div>
   </nav>
   <div class="text-center py-3">
-    <p class="mb-0">© 2025 Lincoln's Senior Site</p>
+    <p class="mb-0">© 2025 Lincoln's Portfolio</p>
   </div>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<script src="script.js"></script>
 </body>
 </html>

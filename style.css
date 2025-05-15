@@ -15,66 +15,159 @@ footer {
   margin-top: auto;
 }
 
-    :root {
-      --primary-bg: #6C78A8;
-      --section-bg: #F8F9FA;
-      --text-light: #F8F9FA;
-      --text-dark: #343A40;
-      --accent: #E9C46A;
-      --secondary: #A8DADC;
+:root {
+  --primary-bg: #6C78A8;
+  --section-bg: #F8F9FA;
+  --text-light: #F8F9FA;
+  --text-dark: #343A40;
+  --accent: #E9C46A;
+  --secondary: #A8DADC;
+}
+
+body {
+  background-color: var(--primary-bg);
+  color: var(--text-light);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+  flex: 1;
+}
+
+.content-section {
+  background-color: var(--section-bg);
+  color: var(--text-dark);
+  border-radius: 8px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+#navbar {
+  background-color: rgba(0,0,0,0.2);
+  backdrop-filter: blur(5px);
+}
+
+.navbar-brand, .nav-link {
+  color: var(--text-light) !important;
+}
+
+.nav-link:hover {
+  color: var(--accent) !important;
+}
+
+h2, h3 {
+  color: var(--primary-bg);
+}
+
+h1 {
+  color: white;
+}
+
+footer {
+  background-color: rgba(0,0,0,0.2);
+  color: var(--text-light);
+  backdrop-filter: blur(5px);
+}
+
+.img-container {
+  border: 3px solid var(--secondary);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.copyright {
+  color: var(--accent);
+}
+
+#about {
+  text-align: center;
+}
+
+#about img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+    .hero-section {
+      background: linear-gradient(135deg, var(--primary-bg) 0%, var(--secondary) 100%);
+      min-height: 80vh;
     }
-    
-    body {
-      background-color: var(--primary-bg);
-      color: var(--text-light);
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    .hero-content {
+      backdrop-filter: blur(2px);
     }
-    
-    main {
-      flex: 1;
+    .gallery-preview {
+      transition: all 0.3s ease;
+      border: 3px solid transparent;
     }
-    
-    .content-section {
-      background-color: var(--section-bg);
+    .gallery-preview:hover {
+      transform: scale(1.03);
+      border-color: var(--accent);
+    }
+    .cta-button {
+      background-color: var(--accent);
+      border: none;
+      padding: 12px 30px;
+      font-weight: 600;
+    }
+    .cta-button:hover {
+      background-color: var(--secondary);
+    }
+    .card-text-content {
       color: var(--text-dark);
-      border-radius: 8px;
-      padding: 2rem;
-      margin-bottom: 2rem;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     }
-    
-    #navbar {
-      background-color: rgba(0,0,0,0.2);
-      backdrop-filter: blur(5px);
-    }
-    
-    .navbar-brand, .nav-link {
-      color: var(--text-light) !important;
-    }
-    
-    .nav-link:hover {
-      color: var(--accent) !important;
-    }
-    
-    h1, h2, h3 {
+    .card-text-content h5 {
       color: var(--primary-bg);
+      font-weight: 600;
+      margin-bottom: 0.5rem;
     }
-    
-    footer {
-      background-color: rgba(0,0,0,0.2);
-      color: var(--text-light);
-      backdrop-filter: blur(5px);
+    .card-text-content p {
+      color: var(--text-dark);
+      opacity: 0.9;
+      margin-bottom: 0;
     }
-    
-    .img-container {
-      border: 3px solid var(--secondary);
-      border-radius: 8px;
+
+        .year-card {
+      transition: all 0.3s ease;
+      border: 3px solid transparent;
       overflow: hidden;
     }
-    
-    .copyright {
-      color: var(--accent);
-
+    .year-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+      border-color: var(--accent);
+    }
+    .year-header {
+      background: linear-gradient(135deg, var(--primary-bg) 0%, var(--secondary) 100%);
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+    }
+    .year-content {
+      background-color: white;
+      padding: 1.5rem;
+      color: var(--text-dark);
+    }
+    .project-btn {
+      background-color: var(--accent);
+      border: none;
+      font-weight: 600;
+    }
+    .project-btn:hover {
+      background-color: var(--secondary);
+    }
+    .timeline-connector {
+      position: relative;
+      height: 40px;
+      width: 2px;
+      background: var(--accent);
+      margin: 0 auto;
+    }
+    @media (max-width: 768px) {
+      .timeline-connector {
+        display: none;
+      }
+    }
