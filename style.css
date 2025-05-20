@@ -171,3 +171,160 @@ footer {
         display: none;
       }
     }
+
+    /* Gallery Styles */
+.gallery-grid {
+  margin-top: 2rem;
+}
+
+.gallery-card {
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  height: 100%;
+  background-color: var(--section-bg);
+  color: var(--text-dark);
+}
+
+.gallery-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Card Type 1 - Image with overlay */
+.card-type-1 {
+  position: relative;
+}
+
+.card-type-1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.7);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.card-type-1:hover .card-overlay {
+  opacity: 1;
+}
+
+.overlay-content {
+  text-align: center;
+  color: white;
+}
+
+.overlay-content h3 {
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+
+/* Card Type 2 - Side by side */
+.card-type-2 .card-body {
+  padding: 1.5rem;
+}
+
+.card-type-2 h3 {
+  color: var(--primary-bg);
+  margin-bottom: 0.5rem;
+}
+
+/* Card Type 3 - Text with background */
+.card-type-3 {
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  min-height: 300px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.card-content {
+  background: rgba(0,0,0,0.7);
+  padding: 1.5rem;
+  width: 100%;
+  color: white;
+}
+
+.card-content h3 {
+  color: var(--accent);
+}
+
+/* Card Type 4 - Polaroid style */
+.polaroid {
+  background: white;
+  padding: 1rem 1rem 2rem 1rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transform: rotate(1deg);
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.card-type-4:hover .polaroid {
+  transform: rotate(0deg) scale(1.02);
+}
+
+.polaroid-caption {
+  padding-top: 1rem;
+  text-align: center;
+}
+
+.polaroid-caption h3 {
+  color: var(--primary-bg);
+}
+
+/* Card Type 5 - Standard card */
+.card-type-5 .card-body {
+  padding: 1.5rem;
+}
+
+.card-type-5 h3 {
+  color: var(--primary-bg);
+}
+
+/* Card Type 6 - Extended description */
+.card-type-6 .card-body {
+  padding: 1.5rem;
+}
+
+.card-type-6 h3 {
+  color: var(--primary-bg);
+  margin-bottom: 1rem;
+}
+
+.tech-specs {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+/* Filter buttons */
+.btn-outline-light.active {
+  background-color: var(--accent);
+  border-color: var(--accent);
+  color: var(--text-dark);
+}
+
+/* Badges */
+.badge {
+  font-weight: 500;
+  padding: 0.35em 0.65em;
+}
+
+.bg-accent {
+  background-color: var(--accent) !important;
+  color: var(--text-dark);
+}

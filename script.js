@@ -24,3 +24,43 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
     formMessage.innerHTML = '';
   }, 5000);
 });
+
+ // Gallery filter functionality
+  document.querySelectorAll('[data-filter]').forEach(button => {
+    button.addEventListener('click', function() {
+      // Update active button
+      document.querySelectorAll('[data-filter]').forEach(btn => {
+        btn.classList.remove('active');
+      });
+      this.classList.add('active');
+      
+      const filter = this.getAttribute('data-filter');
+      const galleryItems = document.querySelectorAll('.gallery-item');
+      
+      galleryItems.forEach(item => {
+        if (filter === 'all' || item.getAttribute('data-category') === filter) {
+          item.style.display = 'block';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    });
+  });
+  
+  // Lightbox functionality
+  document.querySelectorAll('.gallery-card').forEach(card => {
+    card.addEventListener('click', function() {
+      const imgSrc = this.querySelector('img').getAttribute('src');
+      const title = this.querySelector('h3').textContent;
+      const description = this.querySelector('p').textContent;
+      const category = this.querySelector('.badge').textContent;
+      
+      document.getElementById('modalImage').setAttribute('src', imgSrc);
+      document.getElementById('modalTitle').textContent = title;
+      document.getElementById('modalDescription').innerHTML = `<p>${description}</p>`;
+      document.getElementById('modalCategory').textContent = category;
+      
+      const modal = new bootstrap.Modal(document.getElementById('galleryModal'));
+      modal.show();
+    });
+  });
