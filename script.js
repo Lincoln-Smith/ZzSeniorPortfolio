@@ -1,14 +1,13 @@
 document.getElementById('contactForm').addEventListener('submit', function(e) {
   e.preventDefault();
   
-  // Get form values
+
   const name = document.getElementById('name').value;
   const email = document.getElementById('email').value;
   const subject = document.getElementById('subject').value;
   const message = document.getElementById('message').value;
   
-  // Here you would typically send the data to a server
-  // For now, we'll just show a success message
+
   const formMessage = document.getElementById('formMessage');
   formMessage.innerHTML = `
     <div class="alert alert-success">
@@ -25,10 +24,10 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
   }, 5000);
 });
 
- // Gallery filter functionality
+
   document.querySelectorAll('[data-filter]').forEach(button => {
     button.addEventListener('click', function() {
-      // Update active button
+ 
       document.querySelectorAll('[data-filter]').forEach(btn => {
         btn.classList.remove('active');
       });
@@ -47,7 +46,7 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
     });
   });
   
-  // Lightbox functionality
+
   document.querySelectorAll('.gallery-card').forEach(card => {
     card.addEventListener('click', function() {
       const imgSrc = this.querySelector('img').getAttribute('src');
