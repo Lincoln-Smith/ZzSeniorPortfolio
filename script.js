@@ -47,6 +47,7 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
   });
   
 
+  
   document.querySelectorAll('.gallery-card').forEach(card => {
     card.addEventListener('click', function() {
       const imgSrc = this.querySelector('img').getAttribute('src');
