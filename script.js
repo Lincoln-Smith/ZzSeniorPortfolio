@@ -15,10 +15,8 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
     </div>
   `;
   
-  // Clear the form
   document.getElementById('contactForm').reset();
   
-  // Remove the message after 5 seconds
   setTimeout(() => {
     formMessage.innerHTML = '';
   }, 5000);
